@@ -1,0 +1,1 @@
+tools_coin_trading_v.0.26.pl

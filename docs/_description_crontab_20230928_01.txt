@@ -1,0 +1,23 @@
+
+# -- стартуем проверку порогов RSI и MACD для таймфрэйма 2H Gecko
+*/3 * * * * /home/cragr/crypto_agregator/start_check_2H_alerts.sh
+
+# -- Gecko дополнительные данные
+15,45 * * * * /home/cragr/crypto_agregator/webget_gecko_coins_history_data.sh
+
+# -- Gecko сбор данных по 30 - минутным интервалам
+3,33 * * * * /home/cragr/crypto_agregator/webget_gecko_coins_ohlc_data.sh
+
+# -- сбор 1Д с CryptoCompare - при текущих настройках wait = 5s требует 12 минут на выгрузку
+5 * * * * /home/cragr/crypto_agregator/webget_crcomp_currency_pairs_1D.sh
+
+# -- сбор 1H с CryptoCompare - при текущих настройках wait = 3s данные 1М требуют 6 минут, потом запускается 1Ч
+7,37 * * * * /home/cragr/crypto_agregator/webget_crcomp_currency_pairs_1H.sh
+17,47 4 * * * /home/cragr/crypto_agregator/webget_crcomp_currency_pairs_1H_TO_BTC.sh
+
+# -- сбор 1М с CryptoCompare - при текущих настройках wait = 3s требуют 6 минут
+*/10 * * * * /home/cragr/crypto_agregator/webget_crcomp_currency_pairs_1M.sh
+
+# -- сервисная очистка БД
+*/5 * * * * /home/cragr/crypto_agregator/administrative_clear_low_zero.sh
+

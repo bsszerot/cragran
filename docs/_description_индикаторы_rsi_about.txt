@@ -1,0 +1,60 @@
+
+
+change
+Разница между текущим и предыдущим значением, x - x[y].
+change(source, length) → series[float]
+change(source) → series[float]
+Возвращает Результат вычитания.
+
+Расчитывается максимальное значение 
+
+-- добавить входной параметр
+lenm = input(14, minval=1, title="Medium Term Length")
+-- рассчитать RMA заданной длиной
+
+-- max - вернуть большее из значений, change - разница между текущим и прежним
+
+upm = rma(max(change(src), 0), lenm)
+downm = rma(-min(change(src), 0), lenm)
+
+rsim = downm == 0 ? 100 : upm == 0 ? 0 : 100 - (100 / (1 + upm / downm))
+plot(rsim, "RSI Medium", color=#8E1599)
+band1 = hline(70, "Upper Band", color=#C0C0C0)
+band0 = hline(30, "Lower Band", color=#C0C0C0)
+fill(band1, band0, color=#9915FF, transp=90, title="Background")
+
+------------------------------------
+plot(rma(close, 15))
+
+//the same on pine
+pine_rma(src, length) =>
+    alpha = 1/length
+    sum = 0.0
+    sum := na(sum[1]) ? sma(src, length) : alpha * src + (1 - alpha) * nz(sum[1])
+plot(pine_rma(close, 15))
+
+
+------------------------------------
+plot(rsi(close, 7))
+
+// same on pine, but less efficient
+pine_rsi(x, y) => 
+    u = max(x - x[1], 0) // upward change
+    d = max(x[1] - x, 0) // downward change
+    rs = rma(u, y) / rma(d, y)
+    res = 100 - 100 / (1 + rs)
+    res
+
+plot(pine_rsi(close, 7))
+
+# получить датасет с ценой
+# первая строка не определена, можно не определять ее для всех массивов, RMA берём равным значению цены
+# определить множитель RMA 1 / period
+# -- со второй строки
+# определить положительное и отрицательное расхождение, и их RMA
+# определить RS и перевести в %
+# строить график
+#
+#
+
+ 

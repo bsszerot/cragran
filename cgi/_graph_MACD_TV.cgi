@@ -1,0 +1,1 @@
+_graph_MACD_TV_v.0.12.pl

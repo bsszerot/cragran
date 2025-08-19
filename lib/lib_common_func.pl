@@ -1,0 +1,1 @@
+/home/cragr/crypto_agregator/lib/common_func.body

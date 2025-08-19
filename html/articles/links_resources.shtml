@@ -1,0 +1,162 @@
+<!--#include virtual="./../includes/header1.shtml"-->
+
+<!-- таблица вёрстки -->
+<TABLE STYLE="width: 100%;" BORDER="0">
+<TR><TD STYLE="width: 85%;">
+<!-- таблица вёрстки -->
+
+<BR>
+
+<H1>Ссылки и Ресурсы</H1>
+
+<H2 ID="resource">Информационные ресурсы</H2>
+
+<P>Какие сервисы использовать для аналитики криптовалют? Где найти исторические данные, чтобы построить торгового робота? Где есть удобные инструменты, чтобы делать технический анализ? На
+ данной странице собраны лучшие сервисы, которые могут быть полезны инвесторам, трейдерам, аналитикам и другим участникам рынка. Дано неполное описание, какие данные можно там найти -
+ это может натолкнуть вас на какие-то идеи</P>
+
+<TABLE>
+
+<TR><TD COLSPAN="3" STYLE="text-align: right;">--- Наши локальные ресурсы ---<HR><BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="file:///mnt/nfs/mediasrv01/media/Курсы_обучающие/Архив/Ментор_крипта" TARGET="_blank">Наше хранилище локального архива</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>Хранилище материалов с курсами, сохранённых публичных материалов, выгрузка каналов Telegram, наши материалы и домашние работы, электронные книги и т.п.. Отрабатывает только для включённых
+        в локальную информационную экосистему рабочих станций и обращения через браузер Konquerror<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="file:///mnt/nfs/mediasrv01/media/Курсы_обучающие/Оперативные" TARGET="_blank">Оперативный раздел локального хранилища</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>Материалы, с которыми идёт оперативная работа, ещё не перенесённые в неизменяемый архив. Отрабатывает только для включённых в локальную информационную экосистему рабочих станций и обращения
+        через браузер Konquerror<BR>&nbsp;</TD></TR>
+
+<TR><TD COLSPAN="3" STYLE="text-align: right;"><BR>--- Ресурсы для получения данных через API ---<HR><BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://www.cryptocompare.com" TARGET="_blank">https://www.cryptocompare.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>очень <SPAN CLASS="firstly">много метаданных по всем криптовалютам</SPAN>. Есть бесплатное API c уникальными данными. Рейтинги кошельков, бирж, пластиковых карт, майнинг пулов. Бесплатные
+        исторические данные через АПИ<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://www.coingecko.com" TARGET="_blank">https://www.coingecko.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>Уникальность этого сервиса в том, что тут можно анализировать <SPAN CLASS="firstly">активность сообщества в соц. сетях и активность на Github</SPAN>. Все в удобной единой таблице с рейтингом.
+        Аналитика активности по криптовалютным сообществам в Reddit: кол-во комментариев, среднее кол-во пользователей онлайн, среднее кол-во горячих постов за час, кол-во подписчиков в Twitter
+        и Facebook. Данные по репозиториям на Github: коммиты, кол-во заданных вопросо, закрытых вопросов, кол-во форков, наблюдателей, активных участников, общее кол-во нововведений
+        за 4 недели. Статистика по запросам в Bing<BR>&nbsp;</TD></TR>
+
+<TR><TD COLSPAN="3" STYLE="text-align: right;"><BR>--- Ресурсы для проведения технического анализа ---<HR><BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://www.tradingview.com" TARGET="_blank">https://www.tradingview.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD><SPAN CLASS="firstly">технический анализ в один клик</SPAN>. Есть все необходимые индикаторы для профессиональных трейдеров. Можно разбивать график на любые таймфреймы. Есть система уведомлений.
+        Чат. Система шаринга идей с другими пользователям<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://https://www.coinglass.com/tv/Binance_BTCUSDT" TARGET="_blank">https://www.coinglass.com/tv/Binance_BTCUSDT</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD><SPAN CLASS="firstly">технический анализ в один клик</SPAN>. Там, где tradingView ограничивает количество индикаторов - этот ресурс не ограничивает, как и биржи и наш продукт<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://charts.cointrader.pro/charts.html?coin=BITCOIN%3AUSD" TARGET="_blank">https://charts.cointrader.pro/charts.html?coin=BITCOIN%3AUSD</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD><SPAN CLASS="firstly">Аналог TV</SPAN>  от энтузиаста<BR>&nbsp;</TD></TR>
+
+<TR><TD COLSPAN="3" STYLE="text-align: right;"><BR>--- Ресурсы с добротным теоретическим материалом ---<HR><BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://timetotrade.ru" TARGET="_blank">https://timetotrade.ru</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD><SPAN CLASS="firstly">Ресурс валютного трэйдера Виталия</SPAN>. В т.ч. методички по SmartMoney<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://pro_trading.ru" TARGET="_blank">https://pro_trading.ru</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD><SPAN CLASS="firstly">Некто<SPAN>. В т.ч. материалы по Эллиоту и Вайхофу<BR>&nbsp;</TD></TR>
+
+<TR><TD COLSPAN="3" STYLE="text-align: right;"><BR>--- Ресурсы общеаналитические ---<HR><BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://coinmarketcap.com" TARGET="_blank">https://coinmarketcap.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>отличный <SPAN CLASS="firstly">сайт для оценки основной информации по рынку</SPAN>, где можно найти данные по всем блокчейн активам (839 в данный момент). Есть API. Интересные выборки: общая
+        капитализация криптоэкономики, доля Биткоина по отношению к остальным, список новых коинов на биржах, рейтинги Biggest Gainers и Biggest Loosers. Исторические снепшоты основной таблицы
+        <BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="http://mapofcoins.com" TARGET="_blank">http://mapofcoins.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>красивая инфографика по истории криптовалют и протоколов. Есть <SPAN CLASS="firstly">хорошая структурированная выжимка по каждой технологии</SPAN>. Помогает разобрать во всем зоопарке
+        технологий и альткоинов<BR>&nbsp;</TD></TR>
+
+
+<TR><TD><A HREF="https://icostats.com" TARGET="_blank">https://icostats.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>ресурс позволяющий <SPAN CLASS="firstly">отслеживать итоги капитализации прошедших ICO</SPAN> в динамике<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://cryptowat.ch" TARGET="_blank">https://cryptowat.ch</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>Этакий <SPAN CLASS="firstly">агрегатор всех бирж</SPAN>. Удобно смотреть real-time данные: цену, объемы, order book, список совершенных сделок. Есть АПИ. Coinigy.com — более крутой инструмент,
+        но он полностью платный (хотя есть триал). Через АПИ есть доступ к историческим данным OHLC по разным биржам. Поддерживаются только некоторые валютные пары (самые популярные). Есть инструменты
+        для графического анализа. В платной версии можно создать аккаунт и торговать на многих биржах из одного терминала<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="http://monetarism.ru" TARGET="_blank">http://monetarism.ru</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>Известный <SPAN CLASS="firstly">сайт графиков коинтеграции цен</SPAN>. Недавно добавили графики по Биткоину — тысячи их<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://tradeblock.com" TARGET="_blank">https://tradeblock.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>Вообще, позиционируется как инструмент для enterprise трейдеров. Уникален тем, что <SPAN CLASS="firstly">предоставляет много инструментов для анализа Bitcoin и Ethereum</SPAN> блокчейнов: графики
+        транзакций, комиссий, аналитика блоков, мемпул — все в одном месте. Плюс удобный калькулятор для майнинга Bitcoin, который рассчитывает доходность на 5 лет вперед<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://coin.dance" TARGET="_blank">https://coin.dance</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>прекрасная разнообразная <SPAN CLASS="firstly">статистика и инфографика по Биткоину в разных разрезах</SPAN>. Политика в Биткоине: легальный статус в странах, внутрення политика Segwit vs BU.
+        Объемы торгов по разным странам, в том числе на Localbitcoins. Google Trends запросы по разным странам. Аналитика аудитории Биткоина: по полу, возрасту, интересам. Статистика по майнинг пулам
+        Исчерпывающая статистика по блокам и нодам. Можно поиграть в покер<BR>&nbsp;</TD></TR>
+
+<TR><TD><A HREF="https://blockchair.com" TARGET="_blank">https://blockchair.com</A><BR>&nbsp;</TD><TD>&nbsp;</TD>
+    <TD>мощный <SPAN CLASS="firstly">поиск по блокчейну Биткоина</SPAN>. Позволяет искать по всем данным в блоке, которые только возможны<BR>&nbsp;</TD></TR>
+</TABLE>
+
+<H2 ID="library">Книги. Библиотека</H2>
+
+<P>Даглас Марк <SPAN CLASS="firstly">Дисциплинированный трейдер</SPAN>
+<BR>Эдвин Лефевр <SPAN CLASS="firstly">Воспоминания биржевого спекулянта</SPAN>
+<BR>Джек Швагер <SPAN CLASS="firstly">Технический анализ. Полный курс</SPAN>
+<BR>Р. Пректер и А. Фрост <SPAN CLASS="firstly">Волновой принцип Эллиотта</SPAN>
+<BR>Сунь Цзы <SPAN CLASS="firstly">Искусство войны</SPAN>
+<BR>
+<BR>Энтони Роберт <SPAN CLASS="firstly">Секрет абсолютной уверенности в себе</SPAN> из Ментору 30 от Ильи
+<BR>... <SPAN CLASS="firstly">Стратеги голубого океана</SPAN> из Ментору 30 от Ильи
+<BR>Тарасов Владими <SPAN CLASS="firstly">Книга для героев</SPAN> из Ментору 30 от Ильи
+<BR>Рэй Далё <SPAN CLASS="firstly">... про экономические циклы нечто</SPAN> из Ментору 30 от Ильи
+<BR><A HREF="coins/coins_invest.shtml">Срез инвест потрфеля Ментора</A>
+
+
+<BR>- березовский как заработать большие деньги, 
+<BR>- стратеги голубого океана, 
+<BR>- тарасов книга для героев, 
+<BR>- Рэй Деньё про экономические циклы, 
+<BR>- Мастер Ключ чарльз этзи, 
+<BR>- ошо осознанность,
+<BR>- роберт энтони - секреты уверенност в себе, 
+</P>
+
+<H2 ID="video">Фильмы и видеоканалы</H2>
+
+<BR>- Птушкин про Бали, стажёры, 
+<BR>- тинейджер на миллиард, 
+<BR>- игра на понижение, 
+<BR>- далласский клуб покупателей,
+<BR>- джентльмены (макконахи), 
+<BR>- серилы - миллиардеры, 
+<BR>- игра на понижение, 
+<BR>- фильм в области тьмы
+
+<H2 ID="resource">Где брать ресурсы, антивыгорание</H2>
+
+<BR>- физическая нагрузка, 
+<BR>- истории успеха общие интервьюю, 
+<BR>- визуализация и медитация, 
+<BR>- психолог
+<BR>
+<BR>Инструмент - таблица эмоц. тонов Хаббарда. Семейный траст
+
+
+<!-- таблица вёрстки -->
+</TD><TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD STYLE="width: 14%; vertical-align: top;">
+<!-- таблица вёрстки -->
+
+<!--
+<!--#include virtual="./_base_course_menu.shtml"-->
+-->
+
+<BR>
+<BR>
+<BR><A HREF="articles/base_points.shtml#resource">Информационные&nbsp;ресурсы</A>
+<BR><A HREF="articles/base_points.shtml#library">Книги&nbsp;Библиотека</H2></A>
+
+<!-- таблица вёрстки -->
+</TD></TR></TABLE>
+<!-- таблица вёрстки -->
+
+<!--#include virtual="./../includes/foother1.shtml"-->
+
+

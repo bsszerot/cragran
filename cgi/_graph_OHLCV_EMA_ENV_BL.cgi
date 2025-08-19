@@ -1,0 +1,1 @@
+_graph_OHLCV_EMA_ENV_BL_v.0.12.pl

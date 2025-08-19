@@ -1,0 +1,1 @@
+read_crptcomp_OHLC_1D_pair_v.0.2.pl

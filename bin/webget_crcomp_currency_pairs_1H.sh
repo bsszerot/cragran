@@ -1,0 +1,1 @@
+webget_crcomp_currency_pairs_1H_v.0.5.sh

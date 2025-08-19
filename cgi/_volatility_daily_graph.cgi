@@ -1,0 +1,1 @@
+_volatility_daily_graph_v.0.2.pl

@@ -1,0 +1,1 @@
+_ajax_for_contract_redraw_v.0.3.pl

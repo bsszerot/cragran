@@ -1,0 +1,1 @@
+tools_coin_common_info_v.0.6.pl

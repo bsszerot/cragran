@@ -1,0 +1,31 @@
+
+20241105 - lib/lib_cragran_common_v.0.37.pl                      - в функции выборки данных найдена ошибка - периоды отсчитывались по дате на 0 часов, что теряло последние строки выборки
+                                                                   поэтому в функции get_ohlcv_from_crcomp_table_offset терма CURRENT_DATE
+                                                                   заменена на CAST(date_trunc('second', current_timestamp) as timestamp without time zone)
+
+после реализации сдвижки периода появился лимит записей, чтобы не выбирать больше нужного, и старая терма CURRENT_DATE, отдающая всегда 00 часов, стала сдвигать количество записей для минутных и часовых ТФ
+увидели сначала по графику, т.к. была новость о росте BTC, которую мы у себя не увидели. Но в первичке приезжало, в таблицах первички тоже данные были, но не было в таблице графиков
+Отсюда нашли в запросе, выправили, работает корректно вроде
+Был ещё вопрос - урезать ли ДО минут и часов. Но раельный вывод данных графика в табличной форме показывает, что отдаётся ровно запрошенное количество периодов, значит всё ОК - урезать не надо
+
+PS. да, увидели, что данные на трэйдинг вьюв по данной ситуации немного отличаются - там 2 горба, но к нам с криптокомпаре приехал один горб
+
+--- было для разных ТФ ---
+$request = "SELECT currency, reference_currency, TO_CHAR((timestamp_point + INTERVAL '3 HOURS'),'YYYY-MM-DD HH24:MI:SS'),
+                       price_open as PRICE_OPEN, price_low as PRICE_MIN, price_high as PRICE_MAX, price_close PRICE_CLOSE,
+                       extract(day from (timestamp_point + INTERVAL '3 HOURS')) days, extract(hour from (timestamp_point + INTERVAL '3 HOURS')) hours, extract(minute from (timestamp_point + INTERVAL '3 HOURS')) minutes,
+                       volume_from as VOLUME_FROM, volume_to as VOLUME_TO
+                       FROM crcomp_pair_OHLC_1H_history
+                       WHERE currency = '$pv{currency}' AND reference_currency = '$pv{curr_reference}'
+                             AND (timestamp_point + INTERVAL '3 HOURS') > CURRENT_DATE - INTERVAL '$ext_period_real_point hours' order by timestamp_point ASC" ;
+
+
+--- стало для разных ТФ ---
+$request = "SELECT currency, reference_currency, TO_CHAR((timestamp_point + INTERVAL '3 HOURS'),'YYYY-MM-DD HH24:MI:SS'),
+                       price_open as PRICE_OPEN, price_low as PRICE_MIN, price_high as PRICE_MAX, price_close PRICE_CLOSE,
+                       extract(day from (timestamp_point + INTERVAL '3 HOURS')) days, extract(hour from (timestamp_point + INTERVAL '3 HOURS')) hours, extract(minute from (timestamp_point + INTERVAL '3 HOURS')) minutes,
+                       volume_from as VOLUME_FROM, volume_to as VOLUME_TO
+                       FROM crcomp_pair_OHLC_1H_history
+                       WHERE currency = '$pv{currency}' AND reference_currency = '$pv{curr_reference}'
+                             AND (timestamp_point + INTERVAL '3 HOURS') > CAST(date_trunc('second', current_timestamp) as timestamp without time zone) - INTERVAL '$ext_period_real_point hours'
+                       order by timestamp_point ASC LIMIT $limit_prds" ;

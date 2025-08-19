@@ -1,0 +1,16 @@
+
+<P STYLE="text-align: right;">ОБЩЕЕ</P>
+-&nbsp;<A HREF="index.shtml">Начальная&nbsp;страница</A>
+<BR>
+<P STYLE="text-align: right;">ОСНОВНЫЕ МОНЕТЫ</P>
+-&nbsp;<A HREF="cgi/rep_volatility_all_coins.cgi?window_days=7&period_days=120&sort_column=MIN_WEEK_VOL&sort_type=DESC&time_frame=1D">GRAPH&nbsp;ALL(1D)&nbsp;по&nbsp;волатильности</A>
+-&nbsp;<A HREF="cgi/rep_volatility_all_coins.cgi?window_days=7&period_days=120&sort_column=MIN_WEEK_VOL&sort_type=DESC&isvw_1D_block=no&isvw_2H_block=yes">GRAPH&nbsp;ALL(2H)&nbsp;по&nbsp;волатильности</A>
+-&nbsp;<A HREF="cgi/rep_volatility_all_coins.cgi?window_days=7&period_days=120&sort_column=MIN_WEEK_VOL&sort_type=DESC&isvw_1D_block=no&isvw_2H_block=yes&isvw_big_price_EMA=no&isvw_MACD=no&isvw_RSI=yes&isvw_ext_indicators=no&isvw_three_month=no&isvw_full_periods=no">GRAPH&nbsp;RSI(2H)&nbsp;по&nbsp;волатильности</A>
+-&nbsp;<A HREF="cgi/generate_multicoins_page_01.cgi">Сводная&nbsp;страница</A>
+<BR>
+<P STYLE="text-align: right; width: 100%;">В СДЕЛКЕ</P>
+-&nbsp;<A HREF="cgi/rep_volatility_all_coins_bybit.cgi?window_days=7&period_days=120&sort_column=MIN_WEEK_VOL&sort_type=DESC&isvw_1D_block=no&isvw_2H_block=yes">GR_ByBit(2H)&nbsp;по&nbsp;волатильности</A>
+<BR>
+
+<P STYLE="text-align: right;">ВСЕ МОНЕТЫ</P>
+

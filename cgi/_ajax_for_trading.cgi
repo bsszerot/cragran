@@ -1,0 +1,1 @@
+_ajax_for_trading_v.0.9.pl

@@ -1,0 +1,109 @@
+
+# --------------------------------------------------------
+# --- общие параметры ---
+# --------------------------------------------------------
+# перечень монет для обработки
+$trade_all_vol_coin_list = "'BTC','ETH','USDT','BNB','SOL','XRP','USDC','DOGE','ADA','AVAX','TON','SHIB','DOT','BCH','LINK','TRX','MATIC','ICP','UNI','NEAR','LTC','APT','LEO','DAI','STX','FIL','ETC','ATOM','WIF','ARB','IMX','MNT','XLM','RNDR','CRO','HBAR','OKB','OP','PEPE','GRT','MKR','TAO','INJ','VET','KAS','THETA','RUNE','FTM','LDO','FET','FDUSD','AR','TIA','FLOKI','XMR','SUI','SEI','ALGO','GALA','JUP','FLOW','SVBSV','AAVE','CFX','BONK','BEAM','AGIX','QNT','EGLD','FLR','DYDX','SAND','STRK','AXS','BTT','SNX','ORDI','CORE','BGB','PYTH','WLD','XTZ','MINA','CHZ','ONDO','XEC','MANA','AXL','PENDLE','EOS','APE','RON','SATS','CAKE','NEO','KAVA','AKT','IOTA','KCS','JASMY','BUSD','WBTC','BIT','1INCH','AUDIO','COMP','DENT','ICX','DASH','TKO','POND','RIF','WRX','ELF','TWT','RVN','FTT','CTXC','LUNC','ILV','CVR','VINU','MEME','PEPE','LADYS','BABYDOGE','ILV','CVR','ACH','GRAPE','PERP','BLZ','STRD','FTX','CELO','ARB','XCH','OGN','ONE','TFUEL','PERT','ENS','ACA','AIU','CELR','TOKEN','ENA'";
+
+# монеты по капитализации ТОП ~50 минус стэйблкоины
+$trade_top_50_coin_list = "'BTC','ETH','XRP','ADA','TRX','DOGE','UNI','BCH','LDO','AVAX','BNB','USDC','MATIC','SOL','DOT','LTC','LINK','ATOM','ETC','XMR','SHIB','BUSD','LEO','DAI','WBTC','TON','APT','FIL','OKB','ICP','BIT','1INCH','AAVE','AUDIO','FLOW','COMP','DENT','EGLD','ICX','CAKE','DASH','TKO','DYDX','POND','RIF','WRX','ELF','RUNE','TWT','RVN','FTT','CTXC','LUNC','ILV','OP','CVR'" ;
+
+$invest_01_coin_list = "'RUNE','CTXC','RVN','TKO','ETH','RNDR','MANA','DOT','ICP'" ;
+$invest_02_coin_list = "'APT','APEX','BTC','BLZ','CAKE','DOT','FET','FTT','FLOW','GRAPE','LDO','PERP','RNDR','SOL','TWT','STRD','RNDR','FTX','CELO','ARB','APEX','DOT','XCH','OGN','ONE','TFUEL','AXS','AR','PERT','ENS','ACA','AIU'" ;
+#-20240213-$invest_02_coin_list = "'FLOW','ATOM','LUNC','1INCH','CAKE','XRP','ILV','OP','CVR','SOL','MATIC','FTT','AUDIO','INJ'" ;
+$invest_03_coin_list = "'AAVE','SNX','ACH','SUI','DYDX','FET','LDO'" ;
+$invest_04_coin_list = "'BONK','MEME','PEPE','LADYS','BABYDOGE','FLOKI'" ;
+
+$in_trade_coin_list = "'APT','CAKE','AAVE','FLOW','1INCH','AUDIO'" ;
+$in_invest_coin_list = "'GRAPE','BTC','PERP','BLZ','FET'" ;
+
+# адресаты электронной почты для уведомлений
+$mail_recipient_list = "belonin\@zerot.local" ;
+
+# адресаты telegram для уведомлений
+@telegram_recipient_list = ('555555555', '666666666') ;
+
+# --------------------------------------------------------
+# --- технологические каталоги ---
+# --------------------------------------------------------
+# базовый каталог продукта
+$cragran_dir_base = "/home/cragr/crypto_agregator" ;
+
+# каталог библиотек продукта
+$cragran_dir_lib = "/home/cragr/crypto_agregator/lib" ;
+
+# каталог графиков для отсылки событий мониторинга
+$cragran_dir_img_events = "$cragran_dir_base/img/img_event_monitoring" ;
+
+# каталог продукта временный
+$cragran_dir_tmp = "$cragran_dir_base/tmp" ;
+
+# каталог журналирования
+$cragran_dir_log = "$cragran_dir_base/log" ;
+
+# основной файл журнала
+$cragran_main_log_file = "$cragran_dir_log/cragran_main.log" ;
+
+# каталог описания монет, пока не в БД
+$cragran_dir_desc = "$cragran_dir_base/coin_description" ;
+
+# --------------------------------------------------------
+# --- параметры модуля подготовки датасетов ---
+# --------------------------------------------------------
+# заполнять ли хвост данных функцией get_ohlcv_from_crcomp_table. Заполняется при значении "fill"
+$is_fill_tail = "fill" ;
+
+# --------------------------------------------------------
+# --- параметры CGI модулей ---
+# --------------------------------------------------------
+$COMM_PAR_BASE_HREF = "https://zrt.ourorbits.ru/crypta" ;
+$COMM_PAR_BASE_WEB_PATH = "/var/www/crypta" ;
+$COMM_PAR_PGSQL_HOST = "127.0.0.1" ;
+$COMM_PAR_PGSQL_DB_NAME = "crypta" ;
+
+$param_is_show_candle_too = "yes" ;
+# количество записей событий оперативного моиторинга, по которым отображаются графики, а не ссылки на них
+$max_view_graph_operative_events = 400 ;
+# максимальное количество предыдущих событий, отображаемых в строке оперативного события мониторинга
+$max_view_prev_records_operative_events = "15" ;
+
+# --------------------------------------------------------
+# --- параметры модуля мониторинга ---
+# --------------------------------------------------------
+# параметры журналирования продукта
+$is_logging_alert_check_MACD_TV_all_TF_crcomp = "enabled" ;
+
+# пересечения MACD линий уведомлять ли, в т.ч. по EMail и/или Telegram
+$is_macd_line_cross_email_send = "yes_send" ; $is_macd_line_cross_telegram_send = "yes_send" ;
+$is_1H_macd_line_cross_email_send = "no_send" ; $is_1H_macd_line_cross_telegram_send = "no_send" ;
+$is_4H_macd_line_cross_email_send = "yes_send" ; $is_4H_macd_line_cross_telegram_send = "yes_send" ;
+$is_1D_macd_line_cross_email_send = "yes_send" ; $is_1D_macd_line_cross_telegram_send = "yes_send" ;
+
+# смена направления линий MACD уведомлять ли, в т.ч. по EMail и/или Telegram
+$is_macd_line_vector_email_send = "no_send" ; $is_macd_line_vector_telegram_send = "no_send" ;
+$is_1H_macd_line_vector_email_send = "no_send" ; $is_1H_macd_line_vector_telegram_send = "no_send" ;
+$is_4H_macd_line_vector_email_send = "no_send" ; $is_4H_macd_line_vector_telegram_send = "no_send" ;
+$is_1D_macd_line_vector_email_send = "no_send" ; $is_1D_macd_line_vector_telegram_send = "no_send" ;
+
+# смена направления гистограммы MACD уведомлять ли, в т.ч. по EMail и/или Telegram
+$is_macd_gist_vector_email_send = "no_send" ; $is_macd_gist_vector_telegram_send = "no_send" ;
+$is_1H_macd_gist_vector_email_send = "no_send" ; $is_1H_macd_gist_vector_telegram_send = "no_send" ;
+$is_4H_macd_gist_vector_email_send = "no_send" ; $is_4H_macd_gist_vector_telegram_send = "no_send" ;
+$is_1D_macd_gist_vector_email_send = "no_send" ; $is_1D_macd_gist_vector_telegram_send = "no_send" ;
+
+# сигналы RSI уведомлять ли, в т.ч. по EMail и/или Telegram
+$is_rsi_email_send = "no_send" ; $is_rsi_telegram_send = "no_send" ;
+$is_1H_rsi_email_send = "no_send" ; $is_1H_rsi_telegram_send = "no_send" ;
+$is_4H_rsi_email_send = "no_send" ; $is_4H_rsi_telegram_send = "no_send" ;
+$is_1D_rsi_email_send = "no_send" ; $is_1D_rsi_telegram_send = "no_send" ;
+
+# какие графики отправлять при уведомлении Telegram
+$is_send_ema_graph = "send" ; $is_send_macd_graph = "send" ; $is_send_rsi_graph = "send" ; $is_send_vlt_graph = "no_send" ;
+
+# --------------------------------------------------------
+# --- параметры модуля монитора PostgreSQL ---
+# --------------------------------------------------------
+$pg_mon_short_record_limit = 20 ;
+$pg_mon_long_record_limit = 100000 ;
+
+1

@@ -1,0 +1,1 @@
+start_check_ALL_alerts_v.0.3.sh

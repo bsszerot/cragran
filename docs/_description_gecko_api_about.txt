@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# задача - вытащить и положить данные по дневным объёмам и рыночной капитализации монет - этого на криптокомпаре нет
+# скачать, разобрать и уложить таблицу - id, монет и их символов
+# создать генератор команд помонетного скачивания данных по символам монет
+# скачать, разобрать и уложить таблицу - монет, дат, цен, объёмов, капитализации
+#
+
+exit 0 ;
+
+# список валют и их символьных выражений
+curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/list' -H 'accept: application/json'
+
+# данные по одной паре за период - цена, рыночная капитализация, объём. Четвёрки цен для построения свечи тут нет, но есть на cryptocompare.com
+# если не выставить interval=daily, то Data granularity is automatic (cannot be adjusted) 1 day from cur time = 5 minute interval data, 1 - 90 days from cur time = hourly data, above 90 days from cur time = daily data (00:00 UTC)
+curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=3&interval=daily' -H 'accept: application/json' > aaaaa.log
+curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=3' -H 'accept: application/json'
+
+# OHLC исторические данные по паре с автотаймингом - цена, капитализация, объёмы
+# только Data granularity 1 day from cur time = 5 minute interval data, 1 - 90 days from cur time = hourly data, above 90 days from cur time = daily data (00:00 UTC)
+curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1392577232&to=1422577232' -H 'accept: application/json'
+
+# данные по валюте за дату в отношении к другим валютам
+curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/bitcoin/history?date=30-12-2022' -H 'accept: application/json'
+
+# OHLC исторические данные ЦЕН по парам, 4 цены в авторазрезе, 1-2 дня интервалы 30 минут, 3-30 дней инт. 4 часа, 31 день и далее интервал 4 дня
+# значение days может быть 1/7/14/30/90/180/365/max
+curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/bitcoin/ohlc?vs_currency=usd&days=1' -H 'accept: application/json'
+
+# общие данные по рынку- капитализация ряда монет, но мало
+curl -X 'GET' 'https://api.coingecko.com/api/v3/global' -H 'accept: application/json'
+
+

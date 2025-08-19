@@ -1,0 +1,24 @@
+
+BASE_DIR="/home/cragr/crypto_agregator"
+API_DATA_DIR="$BASE_DIR/src_data_from_api"
+LOG_DIR="$BASE_DIR/log"
+LOG_MAIN_FILE="$LOG_DIR/cragran_main.log"
+LOCK_DIR="$BASE_DIR/lock"
+
+CRAGR_DB_BACKUP="/mnt/vdb1/cragr_DB_BACKUP"
+
+SZ_PROXY=" --proxy 172.16.31.207:8118"
+#SZ_PROXY=""
+
+# добавлены 20231225
+# GECKO_GET_COIN_LIST="1inch aave aelf aptos audius avalanche-2 binancecoin bitcoin bitdao bitmon cardano chainlink compound-governance-token cortex covercompared dai dash dent dogecoin dydx elrond-erd-2 ethereum filecoin flow ftx-token icon illuvium listenify litecoin marlin matic-network monero okb optimism pancakeswap-token polkadot ravencoin ripple solana tether the-open-network thorchain tokocrypto tron twitfi unicorn-token uniswap azirx bonk covercompared decentraland fetch-ai floki illuvium injective-protocol memetic pepe render-token salmonation sincronix grape-token bluzelle"
+# CRCOMP_MAIN_COIN_LIST="BTC ETH XRP ADA TRX DOGE UNI BCH LDO AVAX BNB USDC MATIC SOL DOT LTC LINK ATOM ETC XMR SHIB BUSD LEO DAI WBTC TON APT FIL OKB ICP BIT 1INCH AAVE AUDIO FLOW COMP DENT EGLD ICX CAKE DASH TKO DYDX POND RIF WRX ELF RUNE TWT RVN FTT CTXC LUNC ILV OP CVR MINA VINU INJ SNX BONK MEME PEPE LADYS BABYDOGE FLOKI RNDR MANA ILV CVR ACH SUI FET GRAPE PERP"
+
+GECKO_GET_COIN_LIST="aave akash-network algorand apecoin aptos arbitrum arweave avalanche-2 axelar axie-infinity beam-2 binancecoin bitcoin bitcoin-cash bitget-token bittensor bittorrent blockstack bonk cardano celestia chainlink chiliz conflux-token coredaoorg cosmos crypto-com-chain dai decentraland dogecoin dogwifcoin dydx-chain ecash elrond-erd-2 eos ethereum ethereum-classic fantom fetch-ai filecoin first-digital-usd flare-networks floki flow gala hedera-hashgraph immutable-x injective-protocol internet-computer iota jasmycoin jupiter-exchange-solana kaspa kava kucoin-shares leo-token lido-dao litecoin maker mantle matic-network mina-protocol monero near neo okb ondo-finance optimism ordinals pancakeswap-token pendle pepe polkadot pyth-network quant-network render-token ripple ronin sats-ordinals sei-network shiba-inu sincronix singularitynet solana starknet stellar sui tether tezos the-graph the-open-network the-sandbox theta-token thorchain tia tron uniswap usd-coin vechain worldcoin-wld 1inch aelf aptos audius bitdao bitmon compound-governance-token cortex covercompared dash dent ftx-token icon illuvium listenify marlin ravencoin tokocrypto twitfi unicorn-token azirx bonk covercompared memetic pepe salmonation sincronix grape-token bluzelle stride fintrux celo apex-token-2 chia acala arweave harmony celer-network tokenfi ethena"
+CRCOMP_MAIN_COIN_LIST="BTC ETH USDT BNB SOL XRP USDC DOGE ADA AVAX TON SHIB DOT BCH LINK TRX MATIC ICP UNI NEAR LTC APT LEO DAI STX FIL ETC ATOM WIF ARB IMX MNT XLM RNDR CRO HBAR OKB OP PEPE GRT MKR TAO INJ VET KAS THETA RUNE FTM LDO FET FDUSD AR TIA FLOKI XMR SUI SEI ALGO GALA JUP FLOW SVBSV AAVE CFX BONK BEAM AGIX QNT EGLD FLR DYDX SAND STRK AXS BTT SNX ORDI CORE BGB PYTH WLD XTZ MINA CHZ ONDO XEC MANA AXL PENDLE EOS APE RON SATS CAKE NEO KAVA AKT IOTA KCS JASMY BUSD WBTC BIT 1INCH AUDIO COMP DENT ICX DASH TKO POND RIF WRX ELF TWT RVN FTT CTXC LUNC ILV CVR VINU MEME PEPE LADYS BABYDOGE ILV CVR ACH GRAPE PERP BLZ STRD FTX CELO ARB XCH OGN ONE TFUEL PERT ENS ACA AIU CELR TOKEN ENA"
+
+PG_DB="crypta"
+PG_HOST="127.0.0.1"
+PG_USER="crypta"
+PG_PASSWORD="cryptapwd"
+

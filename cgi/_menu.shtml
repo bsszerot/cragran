@@ -1,0 +1,61 @@
+
+<!--<H1 class="menu">Крипта трэйдинг</H1>-->
+
+<!--<P STYLE="text-align: right;">КрАгрАн БеССт</P>-->
+
+<P STYLE="text-align: right;">ОБЩЕЕ</P>
+<P>
+<A HREF="index.shtml">About&nbsp;АПК&nbsp;КрАгрАн</A>
+<BR><A CLASS="menuhref" href="articles/persons.shtml">Персоналии</A>
+<BR><A CLASS="menuhref" href="articles/links_resources.shtml">Ссылки&nbsp;Ресурсы</A>
+</P>
+
+<P STYLE="text-align: right;">ИНСТРУМЕНТАРИЙ</P>
+<P><A HREF="cgi/rep_market_status.cgi">REP&nbsp;Состояние&nbsp;Рынка</A>
+<BR><A CLASS="menuhref" href="cgi/tools_coin_common_info.cgi?currency=BTC&curr_reference=USDT">REP&nbsp;Портрет&nbsp;монеты</A>
+<BR><A HREF="cgi/rep_report_list.cgi?sort_column=AVG_VOL&sort_type=DESC">REP&nbsp;Отчёты&nbsp;аналитика</A>
+<!-- <BR><A TARGET="_blank" HREF="cgi/rep_volatility_all_cycles_coins.cgi?sort_column=AVG_VOL&sort_type=DESC">REP&nbsp;Волатильность&nbsp;монет</A>
+<BR><A TARGET="_blank" HREF="cgi/rep_one_coin_TF_compare.cgi?currency=BTC&curr_reference=USDT&rsi_mode=1&macd_mode=1">REP&nbsp;Индикаторы&nbsp;Циклы</A> -->
+
+<BR>
+<BR><A TITLE="События, выявленные мониторинговым модулем"
+       HREF="cgi/tools_coin_operations.cgi">TOOLS&nbsp;Ведение&nbsp;сделок</A>
+
+<BR><A TITLE="Трэйдинговая сводная форма, только по Tether[USDT]"
+       HREF="cgi/tools_coin_trading.cgi?window_days=7&period_days=120&sort_column=AVG_VOL&sort_type=DESC&time_frame_ext=1H&currency=ALL&curr_reference='USDT'">TOOLS&nbsp;Трэйдинг&nbsp;</A>
+    &nbsp;
+    <A TITLE="Трэйдинговая сводная форма, по Tether[USDT] и Bitcoin[BTC]"
+       HREF="cgi/tools_coin_trading.cgi?window_days=7&period_days=120&sort_column=AVG_VOL&sort_type=DESC&time_frame_ext=1H&currency=ALL">[ALL</A>
+    &nbsp;
+    <A TITLE="Трэйдинговая сводная форма, только по Bitcoin[BTC]"
+       HREF="cgi/tools_coin_trading.cgi?window_days=7&period_days=120&sort_column=AVG_VOL&sort_type=DESC&time_frame_ext=1H&currency=ALL_BTC&curr_reference='BTC'">BT]</A>
+<BR><A CLASS="menuhref" TITLE="Инвестиционная сводная аналитическая форма"
+       href="cgi/tools_coin_invest.cgi?currency=ALL_BTC&curr_reference=BTC">TOOLS&nbsp;Инвестирование</A>
+<BR><A TITLE="События, выявленные мониторинговым модулем"
+       HREF="cgi/tools_coin_monitoring.cgi?currency=ALL_BTC&curr_reference=BTC">TOOLS&nbsp;События&nbsp;мониторинга</A>
+</P>
+
+<P STYLE="text-align: right;">ТЕОРИЯ КРИПТЫ</P>
+<P><A CLASS="menuhref" href="articles/our_resume.shtml">Наши&nbsp;выводы&nbsp;-&nbsp;Знаменатель</A>
+<BR><A CLASS="menuhref" href="articles/our_learn_history.shtml">Наше&nbsp;обучение&nbsp;-&nbsp;История</A>
+<BR><A CLASS="menuhref" href="articles/conspects_eth.shtml">Конспекты&nbsp;разные</A>
+<BR><A HREF="coins/coins_invest.shtml">Инвест пртф 231103</A>
+<BR>
+<BR><A CLASS="menuhref" href="articles/crypta_strategii.shtml">Стратегии&nbsp;крипты</A>
+<BR><A CLASS="menuhref" href="articles/crypta_tactika.shtml">Тактические&nbsp;методы</A>
+<BR><A CLASS="menuhref" href="articles/base_points.shtml">Словарь&nbsp;понятий</A>
+<BR><A CLASS="menuhref" href="articles/distsiplina_psyhologiya.shtml">Психология&nbsp;трейдинга</A>
+<BR><A CLASS="menuhref" href="articles/ploschadki_nuansy.shtml">Биржи&nbsp;Обменники&nbsp;DeFi</A>
+</P>
+
+<P STYLE="text-align: right;">МЕТОДЫ АНАЛИЗА</P>
+<P><A CLASS="menuhref" href="articles/technical_graphics_shvager.shtml">Графический&nbsp;классика</A>
+<BR><A CLASS="menuhref" href="articles/technical_oscillyators.shtml">Компьютерный&nbsp;Индикаторы</A>
+<BR><A CLASS="menuhref" href="articles/technical_graphics_japans.shtml">Японы&nbsp;свечи&nbsp;Price&nbsp;Action</A>
+<BR><A CLASS="menuhref" href="articles/technical_smart_money.shtml">--&nbsp;блок&nbsp;Smart&nbsp;Money</A>
+<BR><A CLASS="menuhref" href="articles/technical_elliot.shtml">Волновой&nbsp;Эллиот</A>
+<BR><A CLASS="menuhref" href="articles/technical_vihoffe.shtml">Базовая&nbsp;теория&nbsp;Вайхофа</A>
+<BR><A CLASS="menuhref" href="articles/fundamental_analyze.shtml">Фундаментальный&nbsp;анализ</A>
+</P>
+
+(C) Belonin S.S., 2023

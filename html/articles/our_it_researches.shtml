@@ -1,0 +1,74 @@
+<!--#include virtual="./../includes/header1.shtml"-->
+
+<!-- таблица вёрстки -->
+<TABLE STYLE="width: 100%;" BORDER="0">
+<TR><TD STYLE="width: 85%;">
+<!-- таблица вёрстки -->
+
+<BR>
+
+<H1>НАши изыскания технологические</H1>
+
+<H2 ID="some_points">[2023-] Общий знаменатель</H2>
+
+<P>в список ресурсов https://ru.investing.com/indices/crypto-volatility-index-chart</P>
+
+<P>графические библиотеки - пробовали. DBD::Chart - нет свечей, DBI::Chart - использовали в ОрСиМОН - нет свечей, Chart-v2.403.9 - используется как основная графическая библиотека, но нет ни баров, ни свечей,
+ в GD-Graph-ohlc-0.9703 есть что нужно, но не очень она гибкая и настраивается меньше опций</P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+
+
+
+
+
+<P><SPAN STYLE="color: green;">---</SPAN> [---] </P>
+<P><SPAN STYLE="color: green;">---</SPAN> [---] </P>
+
+<!-- таблица вёрстки -->
+</TD><TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD STYLE="width: 14%; vertical-align: top;">
+<!-- таблица вёрстки -->
+
+<!--
+<!--#include virtual="./_base_course_menu.shtml"-->
+-->
+<BR>
+<BR>
+<BR><A HREF="articles/base_points.shtml#some_points">Отдельные&nbsp;понятия</A>
+<BR><A HREF="articles/base_points.shtml#money_input">Деньги.&nbsp;Ввод/Вывод</A>
+<BR><A HREF="articles/base_points.shtml#psyhostability">Психологическая&nbsp;устойчивость</A>
+<BR><A HREF="articles/base_points.shtml#extended_points">Дополнительные&nbsp;советы</A>
+<BR><A HREF="articles/base_points.shtml#moshenniki">Мошенники</A>
+<BR><A HREF="articles/base_points.shtml#resource">Информационные&nbsp;ресурсы</A>
+<BR><A HREF="articles/base_points.shtml#library">Книги&nbsp;Библиотека</H2></A>
+
+<!-- таблица вёрстки -->
+</TD></TR></TABLE>
+<!-- таблица вёрстки -->
+
+<!--#include virtual="./../includes/foother1.shtml"-->
+
+

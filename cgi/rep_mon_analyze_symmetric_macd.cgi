@@ -1,0 +1,1 @@
+rep_mon_analyze_symmetric_macd_v.0.5.pl

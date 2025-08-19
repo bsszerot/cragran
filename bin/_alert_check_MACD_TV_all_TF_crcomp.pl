@@ -1,0 +1,1 @@
+_alert_check_MACD_TV_all_TF_crcomp_v.0.12.pl

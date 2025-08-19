@@ -1,0 +1,31 @@
+<!--#include virtual="./../includes/header1.shtml"-->
+
+<!-- таблица вёрстки -->
+<TABLE STYLE="width: 100%;" BORDER="0">
+<TR><TD STYLE="width: 85%;">
+<!-- таблица вёрстки -->
+
+<BR>
+
+<H1>Дисциплина психология трэйдера</H1>
+
+<P>---  блок</P>
+
+<P><SPAN CLASS="firstly">xx</SPAN> - xx</P>
+
+<!-- таблица вёрстки -->
+</TD><TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD STYLE="width: 14%; vertical-align: top;">
+<!-- таблица вёрстки -->
+
+<!--
+<!--#include virtual="./_base_course_menu.shtml"-->
+-->
+<BR>
+<BR>
+<BR><A HREF="">local&nbsp;menu</A>
+
+<!-- таблица вёрстки -->
+</TD></TR></TABLE>
+<!-- таблица вёрстки -->
+
+<!--#include virtual="./../includes/foother1.shtml"-->
